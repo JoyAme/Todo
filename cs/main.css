@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: blue;
+    color: white;
+    height: 25vh;
+}
+.task-1{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.shift{
+    margin-left: 100px;
+    padding-top: 100px;
+}
+.Task{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.taskk{
+    font-size: 25px;
+}
+/* .Task-line{
+    display: grid;
+    justify-content: center;
+} */
+/* .trash-D{
+    display: flex;
+    justify-content: space-around;
+} */
+.btn-1{
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    width:9rem;
+    background-color: blueviolet;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  /* .list{
+    display: block;
+    justify-content: center;
+  } */
+  .list-1{
+ /* justify-content: space-around;
+display: flex; */
+
+  background-color: blue;
+  
+  }
+  .task{
+    display: flex;
+    align-items:flex-end;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.code{
+    margin-bottom: 6px;
+}
+  .trash-D{
+    display: flex;
+    gap: 10px;
+  }
+  .combine{
+    display: flex;
+    
+    align-items: center;
+  }
+  .status{
+    font-size: 18px;
+    padding: 4px;
+    width:9rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: brown;
+  }
+  /* .code-2{
+   float: right;
+   margin-left: 38rem;
+  } */
