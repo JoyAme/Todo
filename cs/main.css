@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: azure;
+    background-color: whitesmoke;
 }
 
 .header{
@@ -24,7 +24,8 @@ body{
     display: flex;
     align-items: center;
     margin-top: 20px;
-    justify-content: space-around;
+    margin: 40px;
+    justify-content: space-between;
 }
 .taskk{
     font-size: 25px;
@@ -58,21 +59,25 @@ body{
     display: block;
     justify-content: center;
   } */
-  .list-1{
+  .coding{
  /* justify-content: space-around;
 display: flex; */
-    padding: 7px;
+margin: 10px;
+
   /* margin-right: 20px;
   margin-left: 20px; */
-  background:linear-gradient(45deg, black,rgb(162, 110, 14));
-  /* margin-right: 15rem;
-  margin-left: 15rem; */
+  /* background-color: rgb(147, 143, 143); */
+  /* background:linear-gradient(45deg, black,rgb(162, 110, 14)); */
+ 
   }
   .task{
     display: flex;
     align-items:center;
+    height: 12vh;
     margin-top: 20px;
-    justify-content: space-around;
+  border-radius: 5px;
+    margin: 40px;
+  justify-content: space-between;
 }
 .code{
     margin-bottom: 6px;
@@ -88,6 +93,7 @@ display: flex; */
   }
   .status{
     font-size: 16px;
+    margin:10px ;
     padding: 4px;
     width:9rem;
     color: white;
