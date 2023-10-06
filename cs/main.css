@@ -11,6 +11,7 @@ body{
     background:linear-gradient(45deg, black,orange);
     color: white;
     height: 30vh;
+    position: relative;
 }
 .task-1{
     font-size: 50px;
@@ -48,17 +49,23 @@ body{
     width:9rem;
     background:linear-gradient(45deg, black,orange);
 }
+.circle{
+  font-size:80px;
+  color: white;
+}
 .material-symbols-outlined {
+  font-size: 34px;
+  /* color: white; */
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
   }
-  /* .list{
+  .list{
     display: block;
     justify-content: center;
-  } */
+  }
   .coding{
  /* justify-content: space-around;
 display: flex; */
@@ -70,7 +77,48 @@ margin: 10px;
   /* background:linear-gradient(45deg, black,rgb(162, 110, 14)); */
  
   }
-  .task{
+  .inputy{
+    width:400px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  #close-tag{
+    cursor: pointer;
+  }
+  .tee-ask{
+    color: white;
+  }
+  ::placeholder{
+    font-size: 20px;
+  }
+  .sub-mit{
+    background-color: white;
+    width:100px;
+    border-radius: 4px;
+  }
+  .stat-us{
+    width:400px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  .formss{
+    background-color: rgb(14, 12, 12);
+    width:430px;
+    padding: 10px;
+    height: 20vh;
+    display: none;
+    position: absolute;
+    top: 15%;
+    border-radius: 8px;
+   left: 40%;
+  }
+  .close{
+    display: flex;
+    justify-content: space-between;
+  }
+  #task{
     display: flex;
     align-items:center;
     height: 12vh;
@@ -88,7 +136,7 @@ margin: 10px;
   }
   .combine{
     display: flex;
-    
+    cursor: pointer;
     align-items: center;
   }
   .status{
@@ -101,7 +149,46 @@ margin: 10px;
     border-radius: 8px;
     background-color: orange;
   }
+  #Editform{
+    display: none;
+  }
+  /* .list-1{
+    display: grid;
+  } */
   /* .code-2{
    float: right;
    margin-left: 38rem;
   } */
+
+  @media screen and (max-width:480px) {
+    .formss{
+      /* background-color: rgb(14, 12, 12);
+      width:20%;
+      padding: 10px;
+      height: 20vh;
+      display: none;
+      position: absolute;
+      top: 15%; */
+      width: 300px;
+      border-radius: 8px;
+     left: 20%;
+    }
+    .inputy{
+      width:280px;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+   
+    .sub-mit{
+      background-color: white;
+      width:100px;
+      border-radius: 4px;
+    }
+    .stat-us{
+      width:280px;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+    }
