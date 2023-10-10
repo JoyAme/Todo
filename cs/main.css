@@ -180,13 +180,23 @@ display: block;
       top: 15%; */
       width: 300px;
       border-radius: 8px;
-     left: 18%;
+     left: 16%;
     }
     .shift{
       margin-left: 50px;
       padding-top: 50px;
      
   }
+  .task-1{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.task-2{
+  font-size: 15px;
+}
+.taskk{
+  font-size: 18px;
+}
     .inputy{
       width:280px;
       padding: 3px;
