@@ -27,7 +27,7 @@ addForm.addEventListener('submit',(e)=>{
         
         data.map((value,key)=>{
             Task.innerHTML+=`
-         
+            <div class='flex  mt-3 card-body border-0 shadow-sm'>
             <div class="coding">
                 <h1 class="code">${value.Todo}</h1>
                 <div class="trash-D">
@@ -52,7 +52,7 @@ addForm.addEventListener('submit',(e)=>{
                
                 >${value.Status}</div>
             </div>
-           
+           </div>
             `
         })
 

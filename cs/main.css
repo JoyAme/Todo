@@ -62,15 +62,15 @@ body{
     'GRAD' 0,
     'opsz' 24
   }
-  .list{
-    display: block;
+  /* .list{
+    display: grid;
     justify-content: center;
-  }
+  } */
   .coding{
  /* justify-content: space-around;
 display: flex; */
 margin: 10px;
-
+display: block;
   /* margin-right: 20px;
   margin-left: 20px; */
   /* background-color: rgb(147, 143, 143); */
@@ -118,14 +118,23 @@ margin: 10px;
     display: flex;
     justify-content: space-between;
   }
-  #task{
+  .flex{
     display: flex;
     align-items:center;
-    height: 12vh;
-    margin-top: 20px;
+    justify-content: space-around;
+  }
+  /* .list-1{
+    display: grid;
+  } */
+  #task{
+    display: grid;
+    grid-template-columns: auto;
+   
+    /* height: 12vh;
+    margin-top: 20px; */
   border-radius: 5px;
-    margin: 40px;
-  justify-content: space-between;
+    margin: 60px;
+  /* justify-content: space-between; */
 }
 .code{
     margin-bottom: 6px;
