@@ -2,10 +2,10 @@ const addForm=document.getElementById("addform")
 const Task=document.getElementById("task")
 const Editform=document.getElementById("Editform")
 const code=document.querySelector(".code")
+const status=document.getElementById("status")
 
 
-
-TaskManger=[]
+TaskManger=[{Todo:'write', Status:'pending'}]
 
 addForm.addEventListener('submit',(e)=>{
     e.preventDefault()
@@ -19,10 +19,9 @@ addForm.addEventListener('submit',(e)=>{
     Modal(TaskManger)
 })
 
-
     const  Modal=(data)=>{
-   
-        addForm.style.display='block';
+        
+       
         Task.innerHTML="";
         
         data.map((value,key)=>{
@@ -48,9 +47,11 @@ addForm.addEventListener('submit',(e)=>{
                 </div>
             </div>
             <div class="code-2">
-                <div class="status" 
-               
-                >${value.Status}</div>
+                <div class="status 
+               ${value.Status} =='pending' ? status.style.backgroundColor='red';:
+               ${value.Status} == 'Complete' ?  status.style.backgroundColor='green';:
+             status.style.backgroundColor='green'
+                ">${value.Status}</div>
             </div>
            </div>
             `
@@ -59,9 +60,13 @@ addForm.addEventListener('submit',(e)=>{
     
     }
     Modal(TaskManger)
-
-
-
+ const closetag= document.getElementById('close-tag')
+    const show=()=>{
+        addForm.style.display='block'
+    }
+    const closeForm=()=>{
+        addForm.style.display='none'
+    }
 
     
    function Edit(id){
@@ -101,7 +106,11 @@ addForm.addEventListener('submit',(e)=>{
             Modal(TaskManger)
         }
     }
-    
+//    const Show=()=>{
+//     addForm.style.display='block';
+//     Modal(TaskManger)
+//     }
+//     Show()
 //     ${value.Status=="pending"? value.Status.style.backgroundColor = "red":
 //     value.Status=='in-progress'? value.Status.style.backgroundColor='yellow':value.Status.style.backgroundColor='green'
 //    }

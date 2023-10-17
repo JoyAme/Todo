@@ -19,7 +19,7 @@
     </div>
     <div class="Task">
         <h3 class='taskk'>All Task</h3>
-        <button class="btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnn" onclick="Modal()">
+        <button class="btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnn" onclick="show()">
             <span class="material-symbols-outlined">
             add
             </span>Add Task</button>
@@ -45,7 +45,7 @@
       <form action="" id="addform" class="formss">
         <div class="close">
             <h3 class="tee-ask">Task</h3>
-            <span class="material-symbols-outlined" id="close-tag">
+            <span class="material-symbols-outlined" id="close-tag" onclick="closeForm()">
                 cancel
                 </span>
         </div>
@@ -56,7 +56,7 @@
             <option value="Complete">Complete</option>
             <option value="in-progress">In-progress</option>
         </select><br><br>
-        <input type="submit" class="sub-mit"/>
+        <input type="submit" class="sub-mit" onclick="closeForm()"/>
        </form>
 
 

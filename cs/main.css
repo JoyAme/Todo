@@ -86,6 +86,12 @@ display: block;
   #close-tag{
     cursor: pointer;
   }
+  #addform{
+    display: none;
+  }
+  #Editform{
+    display: none;
+  }
   .tee-ask{
     color: white;
   }
@@ -158,6 +164,10 @@ display: block;
     border-radius: 8px;
     background-color: orange;
   }
+  /* #status{
+   
+    background-color: rgb(47, 255, 0);
+  } */
   #Editform{
     display: none;
   }
