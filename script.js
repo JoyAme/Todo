@@ -68,12 +68,12 @@ addForm.addEventListener('submit',(e)=>{
 
 
         // closingforms  functions 
-    const show=()=>{
-        addForm.style.display='block'
-    }
-    const closeForm=()=>{
-        addForm.style.display='none'
-    }
+        const show=()=>{
+            addForm.style.display='block'
+        }
+        const closeForm=()=>{
+            addForm.style.display='none'
+        }
 
     // editing functions
    function Edit(id){
