@@ -5,8 +5,13 @@ const code=document.querySelector(".code")
 const status=document.getElementById("status")
 
 
-TaskManger=[{Todo:'write', Status:'pending'}]
+TaskManger=JSON.parse(localStorage.getItem('allTask'))
+// if(TaskManger ==null){
+//     TaskManger=[]
+// }
 
+
+// aDDING TASK FORM
 addForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     const inputt=document.getElementById("inputt").value;
@@ -56,11 +61,13 @@ addForm.addEventListener('submit',(e)=>{
            </div>
             `
         })
-
+        localStorage.setItem('allTask', JSON.stringify(data))
     
     }
     Modal(TaskManger)
- const closetag= document.getElementById('close-tag')
+
+
+        // closingforms  functions 
     const show=()=>{
         addForm.style.display='block'
     }
@@ -68,7 +75,7 @@ addForm.addEventListener('submit',(e)=>{
         addForm.style.display='none'
     }
 
-    
+    // editing functions
    function Edit(id){
         Editform.style.display='block'
 
@@ -82,8 +89,8 @@ addForm.addEventListener('submit',(e)=>{
     let close=document.getElementById("closeform")
 
 
-    // const form= document.getElementById('Editform')
-
+    
+    // EdITING FORM
     Editform.addEventListener('submit',(e)=>{
         e.preventDefault();
     let Todo=document.getElementById("editinput").value
@@ -106,6 +113,20 @@ addForm.addEventListener('submit',(e)=>{
             Modal(TaskManger)
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    const Show=()=>{
 //     addForm.style.display='block';
 //     Modal(TaskManger)
